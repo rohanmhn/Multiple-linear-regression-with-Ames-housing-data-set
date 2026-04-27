@@ -16,3 +16,13 @@ The analytical workflow encompasses exploratory data analysis (EDA), feature sel
 This analysis is structured around two (2) primary research questions:
 a. Which property variables significantly affect the sale price of a residential property in Ames, Iowa?
 b.How effectively can the identified feature set explain and predict property sale price using a Multiple Linear Regression model?
+The Ames Housing Dataset is sourced from Kaggle (https://www.kaggle.com/datasets/marcopale/housing) 
+The original dataset contained 79 variables. The majority of categorical variables exhibited near-zero variance across the dataset and were not selected using domain knowledge. A focused subset of 22 variables was identified as candidate predictors of Sale Price, ultimately reduced to 18 variables for the final model. One missing value was detected and imputed using the variable median
+Multiple linear regression models were tried since the models showed good R square of 79% from just 16 variables. 
+The model assumptions were tested. Heteroscedasticity was one assumption that the linear model failed, hence modifications to the model were incorporated through:
+- correlation transformation
+- Outlier treatment
+- Measurement of interaction between the variables 
+- log transformation of the y variable
+- weighted least squares method to reduce the heteroscedasticity
+Finally, a GLS model was selected the R square of about 89% .

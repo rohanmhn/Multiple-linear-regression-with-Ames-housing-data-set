@@ -27,7 +27,7 @@ The final model is a Generalized Least Squares (GLS) regression with interaction
 # Research Questions
 1.Which property characteristics significantly influence residential sale prices?
 
-2. How effectively can a Multiple Linear Regression model predict sale prices using these features?
+2.How effectively can a Multiple Linear Regression model predict sale prices using these features?
 
 # Key Techniques Used
 ## Feature Engineering
